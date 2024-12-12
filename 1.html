@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function aa(a, b, c) {
+        // aa();
+        // console.log(arguments, 'log');
+        // let a1 = [].slice.call(arguments);
+        // let b2 = Array.from(arguments);
+        // let c3 = [...arguments];
+        // console.log(a1, b2, c3, 'log');
+      }
+      aa(1, 2, 3);
+      // let b = [1, 3, 4];
+      // b.fill(0, 1, 5);
+
+      // window.onerror = function (message, url, line, column, error) {
+      //   console.log(
+      //     '捕获到错误:',
+      //     message,
+      //     '==line:',
+      //     line,
+      //     '==column:',
+      //     column,
+      //     '==error:',
+      //     error
+      //   );
+      // };
+
+      // setTimeout(() => {
+      //   a.b();
+      // });
+
+      // const f = {};
+      // f.cc.ee;
+
+      function main1() {
+        try {
+          let a = new Promise(() => {
+            throw new Error('promise1 error');
+          });
+          // a.catch((e) => {
+          //   console.log(e, 'log');
+          // });
+        } catch (e) {
+          console.log(e.message);
+        }
+      }
+      main1();
+    </script>
+  </body>
+</html>
