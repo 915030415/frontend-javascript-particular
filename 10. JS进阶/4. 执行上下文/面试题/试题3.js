@@ -1,13 +1,15 @@
-console.log(foo); //fn  C
-var foo = "A";
-console.log(foo)  //A
+console.log(foo);
+var foo = 'A';
+console.log(foo);
 var foo = function () {
-    console.log("B");
+  console.log('B');
+};
+console.log(foo);
+foo();
+function foo() {
+  console.log('C');
 }
-console.log(foo); //fn  B
-foo(); // B
-function foo(){
-    console.log("C");
-}
-console.log(foo)  //fn B
-foo(); // B
+console.log(foo);
+foo();
+
+// fnc A fnb  B  fnb B

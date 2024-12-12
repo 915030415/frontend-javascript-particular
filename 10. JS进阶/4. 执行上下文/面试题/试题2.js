@@ -1,9 +1,10 @@
 var a = 1;
 function b() {
-    console.log(a);  // fn
-    a = 10;
-    return;
-    function a() { }
+  console.log(a);
+  a = 10;
+  return;
+  function a() {}
 }
 b();
-console.log(a); //1
+console.log(a);
+// fn 1
